@@ -1,15 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script type="text/javascript" src="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
     <title>Random Password Generator</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">Random Password Generator</a>
+    </nav>
+
+    <br>
+
+    <main class="container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="jumbotron">
+              <h2 class="display-5">Password Generator</h2>
+              <div class="results-box">
+                <span id="randomPassword"></span>
+                <button class="btn" id="clipboard">
+                  Copy to Clipboard
+                </button>
+              </div>
+              <div class="options">
+                <div class="option">
+                  <label for="length" class="lead">Password length</label>
+                  <input
+                    type="number"
+                    id="length"
+                    min="8"
+                    max="128"
+                    value="12"
+                  />
+                </div>
+                <div class="option">
+                  <label for="specialCharacters" class="lead"
+                    >Include special characters?</label
+                  >
+                  <input type="checkbox" id="specialCharacters" checked />
+                </div>
+                <div class="option">
+                  <label for="numbers" class="lead">Include numbers?</label>
+                  <input type="checkbox" id="numbers" checked />
+                </div>
+                <div class="option">
+                  <label for="uppercase" class="lead"
+                    >Include uppercase letters?</label
+                  >
+                  <input type="checkbox" id="uppercase" checked />
+                </div>
+                <div class="option">
+                  <label for="lowercase" class="lead"
+                    >Include lowercase letters?</label
+                  >
+                  <input type="checkbox" id="lowercase" checked />
+                </div>
+              </div>
+              <button class="btn btn-primary btn-lg" id="generate">
+                Generate Password
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>

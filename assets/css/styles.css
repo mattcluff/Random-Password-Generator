@@ -1,0 +1,9 @@
+body {
+    background-color: #3b3b98;
+}
+
+.container {
+    display: block;
+    text-align: center;
+    width: 75%;
+}
