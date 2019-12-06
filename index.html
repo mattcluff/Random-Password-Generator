@@ -14,66 +14,35 @@
     <title>Random Password Generator</title>
   </head>
   <body>
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#">Random Password Generator</a>
-    </nav>
-
-    <br>
-
-    <main class="container">
-      <div class="container-fluid">
+      <header>
+          <h2>Password Generator</h2>
+      </header>
+    <main>
+      <div class="container">
         <div class="row">
           <div class="col-sm-12">
             <div class="jumbotron">
-              <h2 class="display-5">Password Generator</h2>
-              <div class="results-box">
-                <span id="randomPassword"></span>
-                <button class="btn" id="clipboard">
-                  Copy to Clipboard
-                </button>
-              </div>
-              <div class="options">
-                <div class="option">
-                  <label for="length" class="lead">Password length</label>
-                  <input
-                    type="number"
-                    id="length"
-                    min="8"
-                    max="128"
-                    value="12"
-                  />
-                </div>
-                <div class="option">
-                  <label for="specialCharacters" class="lead"
-                    >Include special characters?</label
-                  >
-                  <input type="checkbox" id="specialCharacters" checked />
-                </div>
-                <div class="option">
-                  <label for="numbers" class="lead">Include numbers?</label>
-                  <input type="checkbox" id="numbers" checked />
-                </div>
-                <div class="option">
-                  <label for="uppercase" class="lead"
-                    >Include uppercase letters?</label
-                  >
-                  <input type="checkbox" id="uppercase" checked />
-                </div>
-                <div class="option">
-                  <label for="lowercase" class="lead"
-                    >Include lowercase letters?</label
-                  >
-                  <input type="checkbox" id="lowercase" checked />
-                </div>
-              </div>
-              <button class="btn btn-primary btn-lg" id="generate">
-                Generate Password
+              <h1 class="display-5">Generate a Password</h1>
+              <hr class="my-4" />
+              <textarea
+                name="password"
+                id="pass"
+                class="form-control"
+                rows="5"
+                placeholder="Your Secure Password"
+              ></textarea>
+              <hr class="my-4" />
+              <button id="genStart" type="button" class="btn btn1 btn-primary btn-lg">Generate Password</button>
+              <button id="copyToClipboard" type="button" class="btn btn2 btn-secondary btn-lg">
+                Copy to Clipboard
               </button>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <script type="text/javascript" src="script.js"></script>
+
+    <script src="script.js">    
+        </script>
   </body>
 </html>

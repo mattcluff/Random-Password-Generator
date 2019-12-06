@@ -1,9 +1,19 @@
-body {
-    background-color: #3b3b98;
+header {
+    text-align: center;
+}
+
+h2 {
+    font-size: 70px;
 }
 
 .container {
-    display: block;
-    text-align: center;
-    width: 75%;
+    padding-top: 50px;
+}
+
+.btn1 {
+    background-color: red;
+}
+
+.btn2 {
+    float: right;
 }
