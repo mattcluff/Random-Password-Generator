@@ -1,5 +1,15 @@
 # Random-Password-Generator
-This is my random password generator
+This is my random password generator. I used a little css & bootstrap and the password is generated using Javascript functions.
+
+As an employee with access to sensitive data
+
+I want to randomly generate a password that meets certain criteria 
+
+So that I can create a strong password that provides greater security
+
+## Business Context
+
+For companies that handle large amounts of sensitive data, weak passwords can pose a real security threat. An application that can generate strong passwords quickly and effortlessly saves employees time and ensures secure access to data.
 
 You can click [here](https://mattcluff.github.io/Random-Password-Generator/) to try out the Password Generator.
 
