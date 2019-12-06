@@ -1,9 +1,14 @@
+body {
+   background-image: url(../images/cool-image.jpg)
+}
+
 header {
     text-align: center;
 }
 
 h2 {
     font-size: 70px;
+    color: #fff;
 }
 
 .container {
